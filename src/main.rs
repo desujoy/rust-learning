@@ -1,3 +1,4 @@
+use rust_learning::greet;
 fn main(){
-    rust_learning::greet();
+    greet();
 }
