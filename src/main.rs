@@ -1,3 +1,9 @@
 fn main() {
-    println!("Hello, world!");
+    let x=4;
+    {
+        let x=3;
+        println!("x is {}",x);
+    }
+    println!("x is {}",x);
+    // println!("Hello, world!");
 }
