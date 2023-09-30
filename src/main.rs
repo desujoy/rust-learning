@@ -1,14 +1,9 @@
+const STARTING_MISSILES: i32 = 8;
+const READY_AMOUNT: i32 = 2;
 fn main() {
-    let x=4;
-    let mut y=5;
-    {
-        let x=3;
-        println!("x is {}",x);
-        println!("y is {}",y);
-    }
-    println!("x is {}",x);
-    println!("y is {}",y);
-    y=6;
-    println!("y is {}",y);
-    println!("Hello, world!");
+    let mut missiles: i32 = STARTING_MISSILES;
+    let ready: i32 = READY_AMOUNT;
+    println!("Firing {} of my {} missiles...", ready, missiles);
+    missiles=missiles-ready;
+    println!("{} missiles left.",missiles);
 }
